@@ -1,0 +1,28 @@
+.time-tables {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 15px;
+}
+
+.time-table__column {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.time-table__row {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+}
+.time-table__row > span {
+  margin-right: 10px;
+}
+
+.click-schedule:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

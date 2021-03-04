@@ -1,0 +1,84 @@
+.popup {
+  border-radius: 2%;
+  position: fixed;
+  opacity: 1;
+  top: 20%;
+  left: 13%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.384);
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+input#modal[type="checkbox"]:checked ~ .popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.title {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.title span:nth-child(2),
+.title span:last-child {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.title span:last-child {
+  color: rgba(0, 0, 255, 0.719);
+}
+
+.date {
+  display: grid;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 21px;
+  padding: 0 10px;
+  border-bottom: var(--main-border);
+}
+
+.note {
+  height: 30vh;
+  padding: 0 10px;
+}
+
+.history-day {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.history-day__date {
+  flex-grow: 0;
+  width: 30px;
+  margin-right: 8px;
+  padding-right: 4px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  color: green;
+  text-align: right;
+}
+.history-day__coment {
+  flex-grow: 1;
+  color: blue;
+}
+
+/*  */
+.a-week {
+  display: flex;
+  flex: 1;
+}
+.calendar-date {
+  width: 65px;
+  height: 55px;
+  text-align: center;
+  padding: 0 4px;
+  margin-bottom: 4px;
+}
+
+.date-today {
+  background-color: rgba(151, 255, 151, 0.514);
+}
+
+.color-red {
+  color: red;
+}

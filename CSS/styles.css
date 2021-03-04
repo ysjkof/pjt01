@@ -1,0 +1,56 @@
+@import "reset.css";
+@import "variables.css";
+
+/* component */
+@import "component/nav.css";
+@import "component/dropdown.css";
+@import "component/timetable.css";
+
+.click-schedule {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input:focus {
+  font-size: 18px;
+}
+
+body {
+  font-size: var(--body-font-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.main-image {
+  width: 90vh;
+}
+
+header {
+  height: 40px;
+}
+
+footer {
+  padding: 20px;
+}

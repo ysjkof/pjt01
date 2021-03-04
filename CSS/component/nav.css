@@ -1,0 +1,22 @@
+nav {
+  border-bottom: var(--main-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.nav-list {
+  margin: 0 2vw;
+}
+.nav-control__btn {
+  padding: 0 1vw;
+}
+
+.nav-search:focus {
+  transform: scale(1.1);
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.514);
+  border-radius: 10px;
+  text-align: center;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/patient-popup.css">
+    <title>시간표</title>
+</head>
+<body>
+    <!-- 달력모드에서는 헤더는 공란. 다른 페이지에서 필요할때 제목 출력. -->
+    <header>
+      Header
+    </header>
+    <!-- 달력일 때 오늘이나 날짜 조종기. 검색, 드롭리스트, 옵션 등 항시 출력. -->
+    <nav>
+      <div class="nav-list nav-title">시간표</div>
+      <div class="nav-list nav-control">
+        <span class="nav-control__btn btn">&lt</span>
+        <span class="nav-control__btn btn">2021년</span>
+        <span class="nav-control__btn btn">&gt</span>
+        <span class="nav-control__btn btn">&lt</span>
+        <span class="nav-control__btn btn">2월</span>
+        <span class="nav-control__btn btn">&gt</span>
+        <span class="nav-control__btn btn">&lt</span>
+        <span class="nav-control__btn btn">11일</span>
+        <span class="nav-control__btn btn">&gt</span>
+      </div>
+      <input class="nav-list nav-search" type="text" placeholder="검색어를 입력하세요"/>
+      <div class="nav-list dropdown">
+        <boutton class="dropbox-btn">
+          <i class="bi bi-list"></i>
+        </boutton>
+        <div class="dropdown-content">
+          <ul>
+            <li>환자목록</li>
+            <li>통계</li>
+            <li>설문지</li>
+            <li>알람설정</li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-list nav-config dropdown">
+        <boutton class="dropbox-btn">
+          <i class="bi bi-gear"></i>
+        </boutton>
+        <div class="dropdown-content">
+          <ul>
+            <li>설정1</li>
+            <li>설정2</li>
+            <li>설정3</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 본문. 달력 등. -->
+    <main>
+      <div class="time-tables">
+        <div class="time-table__column">
+          <div class="time-table__row"><span>AM 09:00</span><span>...</span></div>
+          <div class="time-table__row"><span>AM 09:30</span><span>...</span></div>
+          <div class="time-table__row"><span>AM 10:00</span><span>...</span></div>
+          <div class="time-table__row"><span>AM 10:30</span><span>...</span></div>
+          <div class="time-table__row"><span>AM 11:00</span><span>...</span></div>
+          <div class="time-table__row"><span>AM 11:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 12:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 12:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 01:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 01:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 02:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 02:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 03:00</span><span>...</span></div>
+          <div class="time-table__row">
+            <span>PM 03:30</span>
+            <label for="modal"><span class="click-schedule">000홍길동</span></label>
+            <input type="checkbox" id="modal" class="display-none">
+            <!-- pop up contents Start-->
+            <div class="popup">
+              <div class="title"><span>홍길동</span><span>30세(90년 11월)</span><span>♂️</span></div>
+              <div class="history">
+                <div class="date">
+                  <div class="a-week">
+                    <span class="calendar-date">14</span><span class="calendar-date">15</span><span class="calendar-date">16</span><span class="calendar-date">17</span><span class="calendar-date">18</span><span class="calendar-date">19</span><span class="calendar-date">20</span>
+                  </div>
+                  <div class="a-week">
+                    <span class="calendar-date">21</span><span class="calendar-date">22</span><span class="calendar-date">23</span>
+                    <span class="calendar-date">
+                      <span>24</span>
+                      <div class="color-red">15:00</div>
+                    </span>
+                    <span class="calendar-date">25</span><span class="calendar-date">26</span><span class="calendar-date">27</span>
+                  </div>
+                  <div class="a-week">
+                    <span class="calendar-date">28</span>
+                    <span class="calendar-date">
+                      <div>1</div>
+                      <a href="patient-info-select.html"><span class="color-red">15:30</span></a> 
+                    </span>
+                    <span class="calendar-date">2</span>
+                    <span class="calendar-date">3</span>
+                    <span class="calendar-date date-today">4</span>
+                    <span class="calendar-date">5</span>
+                    <span class="calendar-date">6</span>
+                  </div>
+                </div>
+                <!-- note start -->
+                <div class="note">
+                  <div class="history-day">
+                    <span class="history-day__date">1</span>
+                    <span class="history-day__coment">여전히 반응이 애매함. </span>
+                  </div>
+                  <div class="history-day">
+                    <span class="history-day__date">24</span>
+                    <span class="history-day__coment">반응이 애매함.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pop up contents End-->
+          </div>
+          <div class="time-table__row"><span>PM 04:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 04:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 05:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 05:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 06:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 06:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 07:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 07:30</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 08:00</span><span>...</span></div>
+          <div class="time-table__row"><span>PM 08:30</span><span>...</span></div>
+        </div>
+      </div>
+      <img class="main-image display-none" src="img/day.png">
+    </main>
+    <!-- 푸터 -->
+    <footer>
+      <p>
+      이성진의 물리치료실</p>
+      <p>
+        Made by YSJ</p>
+    </footer>
+<!--  -->
+
+    <!-- 자바스크립트 -->
+    <script src="main.js"></script>
+</body>
+</html>
