@@ -27,7 +27,7 @@ input::placeholder {
 }
 
 input:focus {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 body {

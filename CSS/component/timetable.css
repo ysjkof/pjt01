@@ -22,7 +22,11 @@
   margin-right: 10px;
 }
 
-.click-schedule:hover {
+.click-schedule:hover,
+.closer:hover {
+  display: inline-block;
   cursor: pointer;
   transform: scale(1.1);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.356);
+  padding-top: 5px;
 }
